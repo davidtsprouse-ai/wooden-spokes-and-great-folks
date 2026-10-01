@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Wooden Spokes and Great Folks</title>
+  <desc id="logoDesc">A wooden wagon wheel with warm spokes and a welcoming craft mark</desc>
+  <defs>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4A574"/>
+      <stop offset="45%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#5C3A21"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4B896"/>
+      <stop offset="100%" stop-color="#6B3F24"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer rim -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="url(#woodGrad)" stroke-width="8"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#3D2614" stroke-width="1.5" opacity="0.35"/>
+  <!-- Spokes -->
+  <g stroke="url(#woodGrad)" stroke-width="5" stroke-linecap="round">
+    <line x1="60" y1="14" x2="60" y2="106"/>
+    <line x1="14" y1="60" x2="106" y2="60"/>
+    <line x1="27.5" y1="27.5" x2="92.5" y2="92.5"/>
+    <line x1="92.5" y1="27.5" x2="27.5" y2="92.5"/>
+  </g>
+  <!-- Soft spoke highlight -->
+  <g stroke="#F3E9D8" stroke-width="1" stroke-linecap="round" opacity="0.35">
+    <line x1="60" y1="18" x2="60" y2="48"/>
+    <line x1="18" y1="60" x2="48" y2="60"/>
+    <line x1="30" y1="30" x2="48" y2="48"/>
+    <line x1="90" y1="30" x2="72" y2="48"/>
+  </g>
+  <!-- Hub -->
+  <circle cx="60" cy="60" r="14" fill="url(#hubGrad)" stroke="#3D2614" stroke-width="2"/>
+  <circle cx="60" cy="60" r="5" fill="#2C1810"/>
+  <!-- Accent ring (burgundy) -->
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#6B2D3C" stroke-width="2" opacity="0.85"/>
+</svg>

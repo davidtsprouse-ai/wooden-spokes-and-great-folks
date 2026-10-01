@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f7f1e8;
+  --parchment: #f3e9d8;
+  --sand: #e8d9c0;
+  --wood-light: #c4a574;
+  --wood: #8b5e3c;
+  --wood-dark: #5c3a21;
+  --ink: #2c2416;
+  --ink-muted: #5a4e3c;
+  --burgundy: #6b2d3c;
+  --burgundy-dark: #4a1f2a;
+  --forest: #2f4f3e;
+  --forest-light: #3d6b52;
+  --white: #fffcf7;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-parchment: var(--parchment);
+  --color-sand: var(--sand);
+  --color-wood-light: var(--wood-light);
+  --color-wood: var(--wood);
+  --color-wood-dark: var(--wood-dark);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-dark: var(--burgundy-dark);
+  --color-forest: var(--forest);
+  --color-forest-light: var(--forest-light);
+  --color-white: var(--white);
+  --font-serif: var(--font-libre-baskerville);
+  --font-sans: var(--font-source-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--sand);
+  color: var(--ink);
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+.wood-grain {
+  background-image:
+    linear-gradient(180deg, rgba(92, 58, 33, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at top, rgba(196, 165, 116, 0.18), transparent 55%);
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(105deg, rgba(44, 36, 22, 0.78) 0%, rgba(44, 36, 22, 0.45) 55%, rgba(44, 36, 22, 0.25) 100%);
+}
+
+.section-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--wood-light), transparent);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: 3px;
+}
